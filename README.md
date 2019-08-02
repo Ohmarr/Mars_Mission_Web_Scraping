@@ -1,17 +1,18 @@
 # Mission to Mars
 
-
-## A webpage that displays information about Mars.
+## A webpage that displays the latest information about Mars, gathered from online sources.
 
 ![mission_to_mars](Images/mission_to_mars.jpg)
 
-In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
+This application utilized Jupyter Notebook, BeautifulSoup, Pandas, Splinter, PyMongo, Flask Web Templating, & requests.
+
+Two files were used to develop this application.
+
 
 ## Step 1 - Scraping
 
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
-* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
+ `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks.
 
 ### NASA Mars News
 
@@ -95,24 +96,11 @@ Use MongoDB with Flask templating to create a new HTML page that displays all of
 
 - - -
 
-## Step 3 - Submission
-
-To submit your work to BootCampSpot, create a new GitHub repository and upload the following:
-
 1. The Jupyter Notebook containing the scraping code used.
 
-2. Screenshots of your final application.
-
-3. Submit the link to your new repository to BootCampSpot.
-
-## Hints
 
 * Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
 
 * Use Pymongo for CRUD applications for your database. For this homework, you can simply overwrite the existing document each time the `/scrape` url is visited and new data is obtained.
 
 * Use Bootstrap to structure your HTML template.
-
-## Copyright
-
-© 2019 Trilogy Education Services. All Rights Reserved.

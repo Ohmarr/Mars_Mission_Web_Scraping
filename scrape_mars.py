@@ -77,7 +77,7 @@ def scrape_info():
 	# goal: use pandas to Parse & extract table;
 	html = browser.html
 	mars_table_df = pd.read_html(html)
-	mars_table_df = mars_table_df[0]
+	mars_table_df = mars_table_df[1]
 	mars_table_df.columns = ['Attribute', 'Details']
 	mars_table_df.set_index('Attribute', inplace=True)
 	mars_table_df[:][:]
@@ -214,8 +214,3 @@ def scrape_info():
 #
 
 # Use Pymongo for CRUD: Create, Read, Update, Delete applications for your database.
-
-# In[ ]:
-
-
-# In[ ]:

@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Aggregated Mars Information</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
 
 
 
@@ -14,19 +15,20 @@
 
 </head>
 <body>
-	<div class="container-fluid">
+	<div>
+
 		<div class="jumbotron text-center">
 			<h1>Mission to Mars</h1>
 			<p> The latest information is displayed below. Hemispheres can be found <a href='/hemispheres'>here</a> </p>
 			<p><a class="btn btn-primary btn-md" href="/scrape" role="button">Get Data!</a></p>
 			<p><a class="btn btn-primary btn-md" href="/" role="button">Refresh!</a></p>
-			</div>
-		<div class='row' class='container-fluid'>
+		</div>
+		<div class='container-fluid'>
 			<h2>Latest Mars News</h2>
 			<h3>{{mars_data.4.article_title}}</h3>
 			<h4>{{mars_data.4.article_paragraph}}</h4>
 		</div>
-		<div class="row">
+		<div class='container-fluid'>
 			<div class='col-8 col-xs-8 col-sm-8 col-md-8 col-lg-8'>
 				<h2>Featured Mars Image</h2>
 				<img width="100%" height="auto" class='col-12' src="{{mars_data.5.featured_img_url}}" alt="Main_mars_image">
@@ -36,12 +38,11 @@
 				<h2>Latest Mars' Weather From Twitter: </h2>
 				<h3>{{ mars_data.6.mars_weather }}</h3>
 			</div>
-			<div> {{ mars_data.7.mars_table_html|safe }} </div>
-			<div></div>
+
+			<div class='mars_table'> {{ mars_data.7.mars_table_html|safe }} </div>
+			
 		</div>
-		<div>
-			<p>Mars is fun</p>
-		</div>
+	</div>
 
 		
 				<!-- 
@@ -52,7 +53,7 @@
 				<img src='{{mars_data.1}}' alt="cerberus_image">
 				<img src='{{mars_data.2}}' alt="Schiaparelli_image">
 				<img src='{{mars_data.6}}' alt="Syrtis_Major_image"> -->
-	</div>
+
 
 	<!-- {"title": "Valles Marineris Hemisphere", "img_url": Valles_Marineris_href},
   {"title": "Cerberus Hemisphere", "img_url": cerberus_href},

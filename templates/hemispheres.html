@@ -7,22 +7,23 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>The Hemispheres of Mars</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
 	<h6><a href='/'>Home</a></h6>
 	<h1>Hemispheres</h1>
-	<div class="row">
-		<img class="col-6" float='left' width='40%' height='auto' src='{{mars_data.0.sample_url}}'
-			alt="Valles_Marineris_Image">
-		<img class="col-6" float='right' width='40%' height='auto' src='{{mars_data.1.sample_url}}'
-			alt="cerberus_image">
+	<div class="container-fluid">
+		<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='left' max-width='100%' width='auto' height='auto' src='{{mars_data.0.sample_url}}'
+			alt="Valles_Marineris_Image" background-size='contain'>
+		<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='right' max-width='100%' width='auto' height='auto' src='{{mars_data.1.sample_url}}'
+			alt="cerberus_image" background-size='contain'>
 	</div>
-	<div class="row">
-		<img class="col-6" float='left' width='40%' height='auto' src='{{mars_data.2.sample_url}}'
-			alt="Schiaparelli_image">
-		<img class="col-6" float='right' width='40%' height='auto' src='{{mars_data.3.sample_url}}'
-			alt="Syrtis_Major_image">
+	<div class="container-fluid">
+		<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='left' max-width='100%' width='auto' height='auto' src='{{mars_data.2.sample_url}}'
+			alt="Schiaparelli_image" background-size='contain'>
+		<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='right' max-width='100%' width='auto' height='auto' src='{{mars_data.3.sample_url}}'
+			alt="Syrtis_Major_image" background-size='contain'>
 	</div>
 
 	<!-- {"title": "Valles Marineris Hemisphere", "img_url": Valles_Marineris_href},

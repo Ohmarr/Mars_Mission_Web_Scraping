@@ -8,7 +8,7 @@ This application utilized Jupyter Notebook, BeautifulSoup, Pandas, Splinter, PyM
 CRUD
 
 
-<h2 align='center>Scraping</h2>
+<h2 align='center'>Scraping</h2>
 
 Scraping was developed in Jupyter Notebook File `mission_to_mars.ipynb`, which was later converted into a function called `scrape` within a new file called `scrape_mars.py`
 
@@ -20,9 +20,9 @@ Information was gathered from:
  - [United States Geological Survery (USGS)](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars), Scraped: Hi-Res Images of each of Mars' Hemispheres, 
 
 
-<hr>
 
-<h2 align='center> MongoDB and Flask Application</h2>
+
+<h2 align='center'> MongoDB and Flask Application</h2>
 
 The file `app.py` contains the main application, which populates an HTML page from the contents of a database.  
 

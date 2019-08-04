@@ -2,7 +2,7 @@
 
 <h3 align = 'center'> A web-scraping application, which aggregates information from various online resources and displays the results on a landing page </h3>
 
-![mission_to_mars](Images/jpl_fullsize_image.jpg)
+![mission_to_mars](/current_files/jpl_fullsize_image.jpg)
 
 This application utilized Jupyter Notebook, BeautifulSoup, Pandas, Splinter, PyMongo, Flask Web Templating, & requests.
 CRUD

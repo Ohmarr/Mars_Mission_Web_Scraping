@@ -24,23 +24,26 @@
 			<p><a class="btn btn-primary btn-md" href="/" role="button">Refresh!</a></p>
 		</div>
 		<div class='container-fluid'>
-			<h2>Latest Mars News</h2>
-			<h3>{{mars_data.4.article_title}}</h3>
-			<h4>{{mars_data.4.article_paragraph}}</h4>
+			<h2 class='text-center'>Latest Mars News</h2>
+			<h3 >{{mars_data.4.article_title}}</h3>
+			<p >{{mars_data.4.article_paragraph}}</p>
 		</div>
-		<div class='container-fluid'>
-			<div class='col-8 col-xs-8 col-sm-8 col-md-8 col-lg-8'>
-				<h2>Featured Mars Image</h2>
-				<img width="100%" height="auto" class='col-12' src="{{mars_data.5.featured_img_url}}" alt="Main_mars_image">
-			</div>
-			<div></div>
-			<div class='col-4 col-xs-4 col-sm-4 col-md-4 col-lg-4'>
-				<h2>Latest Mars' Weather From Twitter: </h2>
-				<h3>{{ mars_data.6.mars_weather }}</h3>
-			</div>
+		
+		<div class='container'>
+			<div class='row'>
+			<!-- LEFT COLUMN -->
+				<div class='col-md-8'>
+					<h2 aria-hidden="true">Featured Mars Image</h2>
+					<img class='contain' src="{{mars_data.5.featured_img_url}}" alt="Main_mars_image">
+				</div>
+			<!-- RIGHT COLUMN -->
+				<div class='col-md-4'>
+					<h2>Latest Mars' Weather From Twitter: </h2>
+					<h3>{{ mars_data.6.mars_weather }}</h3>
+				</div>
 
-			<div class='mars_table'> {{ mars_data.7.mars_table_html|safe }} </div>
-			
+				<div class='col-md-4 mars_table'> {{ mars_data.7.mars_table_html|safe }} </div>
+			</div>
 		</div>
 	</div>
 

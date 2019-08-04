@@ -1,4 +1,4 @@
-<h1 align = 'center> Mission to Mars </h1>
+<h1 align = 'center'> Mission to Mars </h1>
 
 <h3 align = 'center'> A web-scraping application, which aggregates information from various online resources and displays the results on a landing page </h3>
 

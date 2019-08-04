@@ -7,6 +7,7 @@
 This application utilized Jupyter Notebook, BeautifulSoup, Pandas, Splinter, PyMongo, Flask Web Templating, & requests.
 CRUD
 
+
 <h2 align='center>Scraping</h2>
 
 Scraping was developed in Jupyter Notebook File `mission_to_mars.ipynb`, which was later converted into a function called `scrape` within a new file called `scrape_mars.py`

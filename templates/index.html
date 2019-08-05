@@ -17,7 +17,7 @@
 <body>
 	<div>
 
-		<div class="jumbotron text-center">
+		<div class="jumbotron text-center container-fluid">
 			<h1>Mission to Mars</h1>
 			<p> The latest information is displayed below. Hemispheres can be found <a href='/hemispheres'>here</a> </p>
 			<p><a class="btn btn-primary btn-md" href="/scrape" role="button">Get Data!</a></p>
@@ -29,7 +29,7 @@
 			<p >{{mars_data.4.article_paragraph}}</p>
 		</div>
 		
-		<div class='container'>
+		<div class='container-fluid'>
 			<div class='row'>
 			<!-- LEFT COLUMN -->
 				<div class='col-md-8'>
@@ -39,7 +39,7 @@
 			<!-- RIGHT COLUMN -->
 				<div class='col-md-4'>
 					<h2>Latest Mars' Weather From Twitter: </h2>
-					<h3>{{ mars_data.6.mars_weather }}</h3>
+					<p>{{ mars_data.6.mars_weather }}</p>
 				</div>
 
 				<div class='col-md-4 mars_table'> {{ mars_data.7.mars_table_html|safe }} </div>

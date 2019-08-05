@@ -11,21 +11,24 @@
 </head>
 
 <body>
-	<h6><a href='/'>Home</a></h6>
-	<h1>Hemispheres</h1>
-	<div class="container-fluid">
-		<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='left' max-width='100%' width='auto' height='auto' src='{{mars_data.0.sample_url}}'
-			alt="Valles_Marineris_Image" background-size='contain'>
-		<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='right' max-width='100%' width='auto' height='auto' src='{{mars_data.1.sample_url}}'
-			alt="cerberus_image" background-size='contain'>
+	<div>
+		<div class="jumbotron text-center container-fluid">
+				<h1>The Hemispheres of Mars</h1>
+				<p> The latest information for Mars can be found <a href='/'>here</a> </p>
+		</div>
+		<div class="container-fluid">
+			<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='left' max-width='100%' width='auto' height='auto' src='{{mars_data.0.sample_url}}'
+				alt="Valles_Marineris_Image" background-size='contain'>
+			<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='right' max-width='100%' width='auto' height='auto' src='{{mars_data.1.sample_url}}'
+				alt="cerberus_image" background-size='contain'>
+		</div>
+		<div class="container-fluid">
+			<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='left' max-width='100%' width='auto' height='auto' src='{{mars_data.2.sample_url}}'
+				alt="Schiaparelli_image" background-size='contain'>
+			<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='right' max-width='100%' width='auto' height='auto' src='{{mars_data.3.sample_url}}'
+				alt="Syrtis_Major_image" background-size='contain'>
+		</div>
 	</div>
-	<div class="container-fluid">
-		<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='left' max-width='100%' width='auto' height='auto' src='{{mars_data.2.sample_url}}'
-			alt="Schiaparelli_image" background-size='contain'>
-		<img id='hemispheres' class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6" float='right' max-width='100%' width='auto' height='auto' src='{{mars_data.3.sample_url}}'
-			alt="Syrtis_Major_image" background-size='contain'>
-	</div>
-
 	<!-- {"title": "Valles Marineris Hemisphere", "img_url": Valles_Marineris_href},
   {"title": "Cerberus Hemisphere", "img_url": cerberus_href},
   {"title": "Schiaparelli Hemisphere", "img_url": Schiaparelli_href},
